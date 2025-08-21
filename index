@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMO TERBATAS - Milkgoat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .product-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .discount-badge {
+            background: #e74c3c;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 1.8rem;
+            margin: 15px 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .promo-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #128c7e;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .cta-button:hover {
+            background: #075e54;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(60, 231, 74, 0.4);
+        }
+        
+        .ctasho-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 50px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .ctasho-button:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(231, 76, 60, 0.4);
+        }
+
+        .benefits, .testimonials {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .benefits h2, .testimonials h2 {
+            color: #27ae60;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .benefits ul {
+            list-style-position: inside;
+        }
+        
+        .benefits li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .testimonial {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PROMO SPESIAL HARI INI!</h1>
+            <p>Dapatkan Milkgoat sekarang!</p>
+        </header>
+        
+        <div class="product-showcase">
+            <div class="product-image">
+                <img src="14.png" alt="Milkgoat">
+            </div>
+
+            <div class="product-details">
+                <span class="discount-badge">DISKON 16%</span>
+                <h2>Milkgoat</h2>
+                <p>Produk susu kambing bubuk premium</p>
+                
+                <div class="price">
+                    <span class="original-price">Rp 90.000</span>
+                    <span class="promo-price">Rp75.000</span>
+                </div>
+                
+                <ul class="benefits">
+                    <li>Meningkatkan daya tahan tubuh</li>
+                    <li>Memperbaiki sistem pencernaan</li>
+                    <li>100% bahan alami</li>
+                    <li>Halal dan terdaftar BPOM</li>
+                </ul>
+                
+                <button class="cta-button" id="orderButton">
+                    PESAN SEKARANG VIA WHATSAPP
+                </button>
+                
+                <button class="ctasho-button" id="orderButtonsho">
+                    PESAN SEKARANG VIA SHOPEE
+                </button>
+
+                <p style="text-align: center; margin-top: 15px; font-style: italic;">
+                    Stok terbatas! Harga promo
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="testimonials">
+            <h2>TESTIMONI PELANGGAN</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Cocok mbak.. cucuku kok jg seneng"</p>
+                    <p><strong>- Bu Asri, Magelang</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Minum ini jadi tubuh enteng n berkurang kunang2 e. Dan tidak menimbulkan alergi"</p>
+                    <p><strong>- Sartono, Tronggalan</strong></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="benefits">
+            <h2>MANFAAT UTAMA MILKGOAT</h2>
+            <ul>
+                <li>Meningkatkan sistem kekebalan tubuh</li>
+                <li>Menjaga kesehatan saluran pernapasan</li>
+                <li>Membantu menurunkan kolesterol</li>
+                <li>Memperbaiki sistem pencernaan</li>
+                <li>Menjaga kesehatan tulang dan sendi</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin: 40px 0;">
+            <button class="cta-button" id="orderButton2">
+                DAPATKAN SEKARANG!
+            </button>
+        </div>
+
+         <div style="text-align: center; margin: 40px 0;">
+            <button class="ctasho-button" id="orderButtonsho2">
+                DAPATKAN SEKARANG!
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Milkgoat Official. Hak Cipta Dilindungi</p>
+        <p>Disclaimer: Hasil yang didapatkan dapat bervariasi pada setiap individu</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk mengirim pesan WhatsApp
+        function orderViaWhatsApp() {
+            const phoneNumber = "6285946443438"; // Ganti dengan nomor WhatsApp bisnis
+            const message = encodeURIComponent("Halo, saya ingin pesan Nilkgoat. Mohon info lebih lanjut.");
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+        
+        function orderViaShopee() {
+            window.open(`https://id.shp.ee/kwWtuLx`, '_blank');
+        }
+
+        // Tambahkan event listener ke tombol
+        document.getElementById('orderButton').addEventListener('click', orderViaWhatsApp);
+        document.getElementById('orderButtonsho').addEventListener('click', orderViaShopee);
+        document.getElementById('orderButton2').addEventListener('click', orderViaWhatsApp);
+        document.getElementById('orderButtonsho2').addEventListener('click', orderViaShopee);
+        
+        // Fitur Countdown Timer (opsional)
+        const countdownDate = new Date();
+        countdownDate.setHours(countdownDate.getHours() + 24); // Promo berlaku 24 jam
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').innerHTML = 
+                `Promo berakhir dalam: ${hours} jam ${minutes} menit ${seconds} detik`;
+        }
+        
+        // Jalankan countdown setiap 1 detik
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Inisialisasi awal
+    </script>
+</body>
+</html>
